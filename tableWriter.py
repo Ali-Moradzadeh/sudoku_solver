@@ -98,6 +98,6 @@ class tWriter :
 		
 		for logg in self.__logs :
 			if logg.topic == log.log_code_RESULT :
-				print(*log.message, sep="\n")
+				print(*logg.message, sep="\n")
 			else :
 				cprint(f"{logg.num}) {logg.topic} : {logg.message}", log.colorOf[logg.topic])
